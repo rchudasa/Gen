@@ -2,10 +2,10 @@
 #define GenAnalyzer_h
 // -*- C++ -*-
 //
-// Package:    Gen/GenAnalyzer
-// Class:      GenAnalyzer
+// Package:    Gen/GenAnalyzer4Ele
+// Class:      GenAnalyzer4Ele
 //
-/**\class GenAnalyzer GenAnalyzer.cc Gen/GenAnalyzer/plugins/GenAnalyzer.cc
+/**\class GenAnalyzer GenAnalyzer4Ele.cc Gen/GenAnalyzer/plugins/GenAnalyzer4Ele.cc
 
  Description: [one line class summary]
 
@@ -65,11 +65,11 @@ using std::vector;
 
 // class declaration
 
-class GenAnalyzer : public edm::one::EDAnalyzer<edm::one::SharedResources>
+class GenAnalyzer4Ele : public edm::one::EDAnalyzer<edm::one::SharedResources>
 {
    public:
-      explicit GenAnalyzer(const edm::ParameterSet&);
-      ~GenAnalyzer();
+      explicit GenAnalyzer4Ele(const edm::ParameterSet&);
+      ~GenAnalyzer4Ele();
 
       static void fillDescriptions(edm::ConfigurationDescriptions& descriptions);
 

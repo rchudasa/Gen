@@ -2,7 +2,7 @@ import FWCore.ParameterSet.Config as cms
 
 from RecoMET.METProducers.METSignificanceParams_cfi import METSignificanceParams
 
-fevt = cms.EDAnalyzer('GenAnalyzer'
+fevt = cms.EDAnalyzer('GenAnalyzer4Ele'
 
 , isDebug                        = cms.bool(True)
 , print_trigger                  = cms.bool(True)
