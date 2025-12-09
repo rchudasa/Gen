@@ -35,6 +35,11 @@ process.source = cms.Source("PoolSource",
     , skipEvents = cms.untracked.uint32(options.skipEvents)
     )
 print (" >> Loaded",len(options.inputFiles),"input files from list.")
+process.options = cms.untracked.PSet(
+    wantSummary = cms.untracked.bool(True)
+    # ,SkipEvent = cms.untracked.vstring('ProductNotFound')
+    #,numberOfThreads = cms.untracked.uint32(4)
+)
 
 process.TFileService = cms.Service("TFileService",
     fileName = cms.string(options.outputFile)

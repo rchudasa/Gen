@@ -2,12 +2,13 @@ import FWCore.ParameterSet.Config as cms
 
 from RecoMET.METProducers.METSignificanceParams_cfi import METSignificanceParams
 
-fevt = cms.EDAnalyzer('GenAnalyzer'
+#fevt = cms.EDAnalyzer('GenAnalyzer'
+fevt = cms.EDAnalyzer('GenAnalyzerATo2Tau'
 
 , isDebug                        = cms.bool(True)
 , print_trigger                  = cms.bool(True)
 
-,genParticles    = cms.InputTag('genParticles',"","")
+,genParticles    = cms.InputTag('genParticles',"","HLT")
 ,ak8GenJets    = cms.InputTag('ak8GenJets',"","")
 ,genMetTrue    = cms.InputTag('genMetTrue',"","")
 #,hltresults = cms.InputTag('TriggerResults', "", "HLT")

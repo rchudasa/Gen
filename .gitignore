@@ -1,2 +1,5 @@
 *.pyc
 *.root
+crab.log
+crab_project/*
+crab_project/
